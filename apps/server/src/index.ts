@@ -1,4 +1,4 @@
-import prompts from 'prompts';
+import prompts from 'prompts';/你好
 import { blue, red } from 'kolorist';
 import { getPPTActiveInfo, preSign, traverseCourseActivity } from './functions/activity';
 import { GeneralSign } from './functions/general';
