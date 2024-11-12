@@ -133,12 +133,12 @@ const PromptsOptions = {
     }
     case 3: {
       // 手势签到
-      await GeneralSign({ ...activity, ...params, name });
+      await GeneralSign({ ...activity, ...params, name });//一样用不了
       break;
     }
     case 5: {
       // 签到码签到
-      await GeneralSign({ ...activity, ...params, name });
+      await GeneralSign({ ...activity, ...params, name });//用不了猜测应该是参数和api问题
       break;
     }
     case 0: {
@@ -153,7 +153,7 @@ const PromptsOptions = {
         await PhotoSign({ ...params, activeId: activity.activeId, objectId, name });
       } else {
         // 普通签到
-        await GeneralSign({ ...params, activeId: activity.activeId, name });
+        await GeneralSign({ ...params, activeId: activity.activeId, name });//还能用
       }
     }
   }
